@@ -2,7 +2,7 @@
 import pandas as pd
 from matplotlib import pyplot as plt
 #Import rate history
-raw_rates_df = pd.read_excel(r"C:\\Users\\usdf659971\\OneDrive - WSP O365\\Education\\Grad School\\Education.xlsx", sheet_name="Scaffold")
+raw_rates_df =  pd.read_excel(r"C:\\Users\\usdf659971\\OneDrive - WSP O365\\Education\\Grad School\\Education.xlsx", sheet_name="Scaffold")
 deduction = 1879.52/2852.80
 current_rate = 35.66
 rent = 1963*12
