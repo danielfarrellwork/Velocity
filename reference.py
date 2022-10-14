@@ -1,4 +1,4 @@
-class Hand:
+class Hand:  # hand of cards
 
     def __init__(self):
         self.cards = []  # start with an empty list as we did in the Deck class
