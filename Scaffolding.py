@@ -8,7 +8,7 @@ current_rate = 35.66
 rent = 1963*12
 promised_raise = 1.08
 spring = 5
-fall  = 4
+fall = 4
 hours_in_month = 40*52/12
 anticipated_raise_winter = 1.06
 income_pre_deduction = 40*52*current_rate
@@ -17,16 +17,19 @@ real_income = income_post_deduction - rent
 lost_wages_spring = round(current_rate * deduction * (promised_raise-1) * (spring) * hours_in_month)
 lost_wages_fall = round(current_rate * deduction * (promised_raise-1) * (spring+fall) * hours_in_month)
 bonus = 1000
-# print(f'missing out on ${real_income*(promised_raise-1)} a year in spendable dollars')
 print(f'monthly real income == ${round(real_income/12)}')
+print(f'anticipated rate after 8% raise == ${current_rate*promised_raise}/hr \n or ${income_pre_deduction*promised_raise} salary')
 print(f'lost post deduction wages until fall accounting for bonus ${lost_wages_spring-bonus}')
 print(f'lost post deduction wages through january accounting for bonus ${lost_wages_fall}')
 jace_rate = 35.46
 jude_rate = 40.11
-print(jude_rate/current_rate)
 junior_engineer_wsp = 38
 junior_engineer_IH_less_exp = 35.95
+print(f'someone with a year of experience more than me makes {round((jude_rate/current_rate-1)*100)}% more than me')
+print(f'someone with a year of experience less than me makes {round((jace_rate/current_rate-1)*100)}% less than me')
 
+upfront_PE_cost = 2247
+print(f'the PE costs ${upfront_PE_cost} upfront with $1400 going to the school of PE course')
 
 class PayStub:
 
