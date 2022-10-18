@@ -52,7 +52,7 @@ class PaySummary:
         net = rawlst[1:len(rawlst)-2:3]
         gross = rawlst[2:len(rawlst)-1:3]
         self.visual_df = pd.DataFrame({'dates': dates, 'gross': gross, 'net': net}, columns=['dates', 'gross', 'net'])
-        print(self.visual_df)
+        print(self.visual_df) #
         for i in range(len(dates)):
             self.stubs.append(PayStub(dates[i], gross[i], net[i]))
 
